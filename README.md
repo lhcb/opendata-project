@@ -19,3 +19,5 @@ docker build -t betatim/everware-demo .
 
 The `cms-jpsi.ipynb` notebook is from [`everware/everware-dimuon-example`](https://github.com/everware/everware-dimuon-example)
 and was written by [Noel Dawe](https://github.com/ndawe).
+
+The `RooFit-tutorial.ipynb` notebook is from [`betatim/roofit_tutorial_solutions`](https://github.com/betatim/roofit_tutorial_solutions).
