@@ -8,7 +8,8 @@ the CERN infrastructure.
 # Running it on Everware
 
 If you have access to an [`everware`](//github.com/everware/everware) instance
-you can try out this repository by pasting a link to this repository.
+you can try out this repository simply by surfing there and then pasting
+a link to this repository.
 
 
 # Running it locally
