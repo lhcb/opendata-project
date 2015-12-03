@@ -9,7 +9,9 @@ C_ANADIR="/home/jupyter/analysis"
 # Found this solution from ipython/ipython#7062 and ipython/docker-notebook#6
 container_id=`docker run -d -v $WORKDIR:$C_ANADIR -p 8888 betatim/everware-demo sh -c "ipython notebook --port=8888 --ip=0.0.0.0 --no-browser --notebook-dir=$C_ANADIR"`
 
-if hash boot2docker 2>/dev/null; then
+if hash docker-machine 2>/dev/null; then
+    connect_string=`docker port $container_id 8888 | sed -e 's/0.0.0.0/'$(docker-machine ip docker-vm)'/'`
+elif hash boot2docker 2>/dev/null; then
     connect_string=`docker port $container_id 8888 | sed -e 's/0.0.0.0/'$(boot2docker ip)'/'`
 else
     connect_string=`docker port $container_id 8888`
