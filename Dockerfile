@@ -5,5 +5,5 @@ USER root
 RUN apt-get -y update && apt-get install -y curl
 
 USER jupyter
-RUN /bin/bash -c "source activate py27 && conda install pandas && pip install rootpy==0.8.0 root_numpy==4.3.0"
+RUN /bin/bash -c "source activate py27 && conda install pandas numexpr && pip install rootpy==0.8.0 root_numpy==4.3.0"
 RUN conda install -n py27 ipywidgets=4.1.0
