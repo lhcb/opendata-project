@@ -3,6 +3,7 @@ MAINTAINER Tim Head <betatim@gmail.com>
 
 USER root
 RUN apt-get -y update && apt-get install -y curl
+RUN apt-get install -y python-pandas
 
 USER jupyter
 RUN /bin/bash -c "source activate py27 && pip install rootpy==0.8.0 root_numpy==4.3.0"
