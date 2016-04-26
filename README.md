@@ -21,7 +21,7 @@ a link to this repository.
 If you've come here through everware then just click the "LHCb open data portal project"
 notebook to get started! 
 
-#Contents
+
 
 
 
