@@ -1,33 +1,32 @@
-# An everware demo
+# Welcome to the LHCb open data portal project!
 
-Everware demo repository. It contains various demonstrations of what
-you can do with everware, jupyter notebooks, and integrating it with
-the CERN infrastructure.
+This project will take you through the process of analysing data from the LHCb experiment
+looking for a difference in the rate of production of matter and anti-matter from B-meson decay. 
+The project is aimed at the level of advanced high school students, undergraduates and particle
+physics enthusiasts. As this is essentially large scale data analysis you will be doing
+some programming. 
 
+This analysis will be done in the python programming language. Do not fear
+if you have not used python before, there is guidance and hints throughout
+the notebook. There is also an [example analysis](link) that will give you examples
+of how to do everything within the analysis, you just need to adapt the code for physics.
 
-# Running it on Everware
-
-If you have access to an [`everware`](//github.com/everware/everware) instance
+# Getting started
+Hopefully you will have come to this page through the LHCb open data portal and everware.
+If so then you just need to click the "LHCb open data portal project" notebook in order
+to get started. If you have access to an [`everware`](//github.com/everware/everware) instance
 you can try out this repository simply by surfing there and then pasting
 a link to this repository.
 
+If you've come here through everware then just click the "LHCb open data portal project"
+notebook to get started! 
 
-# Running it locally
+#Contents
 
-You can execute this demo locally with the `run_local.sh` script. This
-is particularly useful during development. You will have to install
-[docker](http://docker.io) on your machine.
 
-For this to work you will have to build the docker container first with
 
-```
-docker build -t betatim/everware-demo .
-```
 
 
 # Credits
 
-The `cms-jpsi.ipynb` notebook is from [`everware/everware-dimuon-example`](https://github.com/everware/everware-dimuon-example)
-and was written by [Noel Dawe](https://github.com/ndawe).
 
-The `RooFit-tutorial.ipynb` notebook is from [`betatim/roofit_tutorial_solutions`](https://github.com/betatim/roofit_tutorial_solutions).
