@@ -5,9 +5,9 @@ USER root
 RUN apt-get -y update && apt-get install -y curl
 
 USER jupyter
-RUN /bin/bash -c "source activate py27 && conda install pandas numexpr && pip install rootpy==0.8.0 root_numpy==4.3.0"
+RUN /bin/bash -c "source activate py27 && conda update --all"
+RUN /bin/bash -c "source activate py27 && conda install -y pandas numexpr && pip install rootpy==0.8.0 root_numpy==4.3.0"
 RUN /bin/bash -c "source activate py27 && pip install ipywidgets==5.0.0"
 RUN /bin/bash -c "source activate py27 && pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip"
 RUN /bin/bash -c "source activate py27 && jupyter nbextension enable usability/collapsible_headings/main"
 RUN /bin/bash -c "source activate py27 && jupyter nbextension enable --py widgetsnbextension"
-
