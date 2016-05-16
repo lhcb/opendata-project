@@ -9,4 +9,4 @@ RUN /bin/bash -c "source activate py27 && conda install pandas numexpr && pip in
 RUN /bin/bash -c "source activate py27 && conda install -n py27 ipywidgets==4.1.0"
 RUN /bin/bash -c "source activate py27 && pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip"
 RUN /bin/bash -c "source activate py27 && jupyter nbextension enable usability/collapsible_headings/main"
-RUN /bin/bash -c "source activate py27 && jupyter nbextension enable widgetsnbextension"
+RUN /bin/bash -c "source activate py27 && jupyter nbextension enable widgetsnbextension --sys-prefix"
