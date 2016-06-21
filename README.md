@@ -14,9 +14,12 @@ of how to do everything within the analysis, you just need to adapt the code for
 # Getting started
 Hopefully you will have come to this page through the LHCb open data portal and everware.
 If so then you just need to click the "LHCb open data portal project" notebook in order
-to get started. If you have access to an [`everware`](//github.com/everware/everware) instance
+to get started. If you have access to an [`everware`](https://github.com/everware/everware) instance
 you can try out this repository simply by surfing there and then pasting
-a link to this repository.
+a link to this repository or just by clicking this badge
+
+[![run at everware](https://img.shields.io/badge/run%20me-@everware-blue.svg?style=flat)](https://everware.rep.school.yandex.net/hub/oauth_login?repourl=https://github.com/lhcb/opendata-project.git)
+
 
 If you've come here through everware then just click the "LHCb open data portal project"
 notebook to get started! 
