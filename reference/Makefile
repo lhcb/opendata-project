@@ -1,7 +1,7 @@
 DOCUMENT_MARKDOWN = lhcb-opendata-reference.md
 
 DOCUMENT_LATEX = lhcb-opendata-reference.tex
-DOCUMENT_PDF = lhcb-opendata-reference.pdf
+DOCUMENT_PDF = ../Background-Information-Notebooks/FunctionReferences.pdf
 
 LATEX_SETTINGS = \
     -V documentclass:article \
