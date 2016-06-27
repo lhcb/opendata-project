@@ -8,7 +8,7 @@ some programming.
 
 This analysis will be done in the python programming language. Do not fear
 if you have not used python before, there is guidance and hints throughout
-the notebook. There is also an [example analysis](link) that will give you examples
+the notebook. There is also an [example analysis](https://github.com/lhcb/opendata-project/blob/master/Example-Analysis.ipynb) that will give you examples
 of how to do everything within the analysis, you just need to adapt the code for physics.
 
 # Getting started
