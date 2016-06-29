@@ -12,5 +12,7 @@ RUN /bin/bash -c "source activate py27 && pip install https://github.com/ipython
 RUN /bin/bash -c "source activate py27 && jupyter nbextension enable usability/collapsible_headings/main"
 RUN /bin/bash -c "source activate py27 && jupyter nbextension enable --py widgetsnbextension"
 
+RUN /bin/bash -c "source activate py27 && pip install root_pandas"
+
 RUN /bin/bash -c "source activate root && pip install ipywidgets==5.0.0"
 RUN /bin/bash -c "source activate root && jupyter nbextension enable --py widgetsnbextension"
