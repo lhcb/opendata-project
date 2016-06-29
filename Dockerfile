@@ -1,5 +1,18 @@
-FROM chrisburr/opendata:v2
-MAINTAINER Christopher Burr <c.b@cern.ch>
+FROM betatim/everware_cern_analysis:31102015
+MAINTAINER Tim Head <betatim@gmail.com>
+
+USER root
+RUN apt-get -y update && apt-get install -y curl
 
 USER jupyter
-RUN ls
+# RUN /bin/bash -c "source activate py27 && conda update --all"
+RUN /bin/bash -c "source activate py27 && conda install -y pandas numexpr && pip install rootpy==0.8.0 root_numpy==4.3.0"
+RUN /bin/bash -c "source activate py27 && pip install ipywidgets==5.0.0"
+RUN /bin/bash -c "source activate py27 && pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip"
+RUN /bin/bash -c "source activate py27 && jupyter nbextension enable usability/collapsible_headings/main"
+RUN /bin/bash -c "source activate py27 && jupyter nbextension enable --py widgetsnbextension"
+
+RUN /bin/bash -c "source activate py27 && pip install root_pandas"
+
+RUN /bin/bash -c "source activate root && pip install ipywidgets==5.0.0"
+RUN /bin/bash -c "source activate root && jupyter nbextension enable --py widgetsnbextension"
