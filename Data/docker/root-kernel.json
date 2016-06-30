@@ -1,0 +1,14 @@
+{
+ "language": "c++",
+ "argv": [
+  "/home/jupyter/conda/envs/py27/bin/python",
+  "-m",
+  "IPython.kernel",
+  "-f",
+  "{connection_file}",
+  "-c",
+  "import ROOT;ROOT.toCpp();"
+ ],
+ "display_name": "ROOT",
+ "env": {"PATH": "/home/jupyter/conda/envs/py27/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}
+}
