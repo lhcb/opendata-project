@@ -4,12 +4,12 @@ if [ -z "$JPY_WORKDIR" ] ; then
   export JPY_WORKDIR="/notebooks"
 fi
 
-if [[ ! -d $JPY_WORKDIR ]] ; then
+if [ ! -d $JPY_WORKDIR ] ; then
   mkdir -p $JPY_WORKDIR
 fi
 
 if [ -n "$JPY_GITHUBURL" ] ; then
-  git clone --depth 1 $JPY_GITHUBURL $JPY_WORKDIR > $HOME/git.log
+  git clone $JPY_GITHUBURL $JPY_WORKDIR > $HOME/git.log
   git reset --hard $JPY_REPOPOINTER
   jupyterhub-singleuser \
     --port=8888 \
