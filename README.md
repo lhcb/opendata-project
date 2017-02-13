@@ -4,7 +4,7 @@ This project will take you through the process of analysing data from the LHCb e
 looking for a difference in the rate of production of matter and anti-matter from B-meson decay. 
 The project is aimed at the level of advanced high school students, undergraduates and particle
 physics enthusiasts. As this is essentially large scale data analysis you will be doing
-some programming. 
+some programming.
 
 This analysis will be done in the python programming language. Do not fear
 if you have not used python before, there is guidance and hints throughout
@@ -18,11 +18,11 @@ to get started. If you have access to an [`everware`](https://github.com/everwar
 you can try out this repository simply by surfing there and then pasting
 a link to this repository or just by clicking this badge
 
-[![run at everware](https://img.shields.io/badge/run%20me-@everware-blue.svg?style=flat)](https://everware.rep.school.yandex.net/hub/oauth_login?repourl=https://github.com/lhcb/opendata-project.git)
+[![run at everware](Images/badge.svg)](https://everware.rep.school.yandex.net/hub/oauth_login?repourl=https://github.com/lhcb/opendata-project.git)
 
 
 If you've come here through everware then just click the "LHCb open data portal project"
-notebook to get started! 
+notebook to get started!
 
 
 
