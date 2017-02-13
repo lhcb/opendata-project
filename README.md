@@ -18,7 +18,7 @@ to get started. If you have access to an [`everware`](https://github.com/everwar
 you can try out this repository simply by surfing there and then pasting
 a link to this repository or just by clicking this badge
 
-[![run at everware](Images/badge.svg)](https://everware.rep.school.yandex.net/hub/oauth_login?repourl=https://github.com/lhcb/opendata-project.git)
+[![run at everware](https://cdn.rawgit.com/chrisburr/opendata-project/master/Images/badge.svg)](https://everware.rep.school.yandex.net/hub/oauth_login?repourl=https://github.com/lhcb/opendata-project.git)
 
 
 If you've come here through everware then just click the "LHCb open data portal project"
