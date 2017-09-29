@@ -2,12 +2,10 @@
 from __future__ import print_function
 from __future__ import division
 
-import hashlib
-import os
 import functools
 import warnings
-import urllib
 warnings.filterwarnings("ignore")
+from subprocess import check_output
 
 import numpy
 from ipywidgets import interact
@@ -31,6 +29,7 @@ from root_pandas import read_root
 from scipy import stats as st
 from matplotlib import pyplot as plt
 
+
 def get_plot_func(data):
     def plot_hist(bins, x_min, x_max):
         data.hist(bins=bins, range=(x_min, x_max))
@@ -38,26 +37,6 @@ def get_plot_func(data):
         plt.ylabel('Number of Events')
     return plot_hist
 
-def download_data(filename, url, expected_hash):
-    while not os.path.isfile(filename):
-        try:
-            print('Downloading', filename)
-            urllib.urlretrieve (url, filename)
-        except Exception:
-            if not os.path.isfile(filename):
-                continue
-        _hash = hashlib.md5(open(filename, 'rb').read()).hexdigest()
-        if _hash != expected_hash:
-            print('Hash does not match for', filename, '- retrying')
-            os.remove(filename)
 
-download_data(
-    'B2HHH_MagnetDown.root',
-    'https://cernbox.cern.ch/index.php/s/gPi4yJkPZrSBenW/download',
-    '7901d0070a0c74a13755f6878f420e92'
-)
-download_data(
-    'B2HHH_MagnetUp.root',
-    'https://cernbox.cern.ch/index.php/s/8rckTojLRJuEfTF/download',
-    'a2ccdd0441b9942f92929390c3b5221e'
-)
+check_output('xrdcp xroot://eospublic.cern.ch//eos/opendata/lhcb/AntimatterMatters2017/data/B2HHH_MagnetDown.root .')
+check_output('xrdcp xroot://eospublic.cern.ch//eos/opendata/lhcb/AntimatterMatters2017/data/B2HHH_MagnetUp.root .')
